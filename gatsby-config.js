@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Contentful Starter",
-    description: "Official Contentful Gatsby Starter",
+    title: "House of Black Tides",
+    description: "Welcome to the house of Black Tides",
   },
   plugins: [
     "gatsby-transformer-sharp",

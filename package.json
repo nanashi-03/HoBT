@@ -1,12 +1,9 @@
 {
-  "name": "contentful-starter-gatsby-blog",
-  "description": "Contentful Gatsby Starter Blog",
+  "name": "house-of-black-tides",
+  "description": "House of Black Tides",
   "private": true,
   "version": "0.0.1",
-  "author": "Contentful <opensource@contentful.com>",
-  "bugs": {
-    "url": "https://github.com/contentful/starter-gatsby-blog/issues"
-  },
+  "author": "Nanashi",
   "dependencies": {
     "@contentful/rich-text-plain-text-renderer": "^15.12.1",
     "gatsby": "^5.5.0",
@@ -30,7 +27,6 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "homepage": "https://github.com/contentful/starter-gatsby-blog#readme",
   "keywords": [
     "gatsby",
     "contentful",

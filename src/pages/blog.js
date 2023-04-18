@@ -8,41 +8,50 @@ import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
 
 class BlogIndex extends React.Component {
-  render() {
-    const posts = get(this, 'props.data.allContentfulBlogPost.nodes')
+	render() {
+		const posts = get(this, 'props.data.allContentfulBlogPost.nodes')
+		const { location } = this.props
+		const params = new URLSearchParams(location.search)
+		const category = params.get('cat')
+		const categories = ["personal", "fiction", "history", "travel", "philosophy"];
+		console.log(categories.includes(category));
+		
+		const filteredPosts = categories.includes(category)?posts.filter(post => post.tags.includes(category)):posts
 
-    return (
-      <Layout location={this.props.location}>
-        <Seo title="Blog" />
-        <Hero title="Blog" />
-        <ArticlePreview posts={posts} />
-      </Layout>
-    )
-  }
+		return (
+			<Layout location={this.props.location}>
+				<Seo title="Blog" />
+				<Hero title="Blog" />
+				<ArticlePreview posts={filteredPosts} />
+			</Layout>
+		)
+	}
 }
 
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query BlogIndexQuery {
-    allContentfulBlogPost(sort: { publishDate: DESC }) {
-      nodes {
-        title
-        slug
-        publishDate(formatString: "MMMM Do, YYYY")
-        tags
-        heroImage {
-          gatsbyImage(
-            layout: FULL_WIDTH
-            placeholder: BLURRED
-            width: 424
-            height: 212
-          )
-        }
-        description {
-          raw
-        }
-      }
-    }
-  }
-`
+  	query BlogIndexQuery{
+    	allContentfulBlogPost(
+      		sort: { publishDate: DESC }
+   			) {
+      			nodes {
+        		title
+        		slug
+        		publishDate(formatString: "MMMM Do, YYYY")
+        		tags
+				heroImage {
+					gatsbyImage(
+						layout: FULL_WIDTH
+						placeholder: BLURRED
+						width: 424
+						height: 212
+					)
+				}
+				description {
+					raw
+				}
+      		}
+    	}
+  	}
+`;
