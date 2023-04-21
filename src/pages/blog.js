@@ -17,11 +17,12 @@ class BlogIndex extends React.Component {
 		console.log(categories.includes(category));
 		
 		const filteredPosts = categories.includes(category)?posts.filter(post => post.tags.includes(category)):posts
+		const heroTitle = categories.includes(category)?category:"Blogs";
 
 		return (
 			<Layout location={this.props.location}>
 				<Seo title="Blog" />
-				<Hero title="Blog" />
+				<Hero title={heroTitle} />
 				<ArticlePreview posts={filteredPosts} />
 			</Layout>
 		)

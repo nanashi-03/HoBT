@@ -33,6 +33,7 @@
   font-weight: var(--extrabold);
   line-height: var(--solid);
   margin: 0 0 var(--space-xl);
+  text-transform: capitalize;
 }
 
 .content {
