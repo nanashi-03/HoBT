@@ -25,6 +25,11 @@ const Navigation = () => (
 					Categories
 				</Link>
 			</li>
+			<li className={[styles.navigationItem, styles.signUp].join(' ')}>
+				<Link to="/signup" className="active">
+					Subscribe
+				</Link>
+			</li>
 		</ul>
 	</nav>
 )

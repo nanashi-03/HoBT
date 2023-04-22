@@ -13,6 +13,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "gatsby": "^5.5.0",
     "gatsby-plugin-image": "^3.5.0",
+    "gatsby-plugin-mailchimp": "^5.2.2",
     "gatsby-plugin-react-helmet": "^6.5.0",
     "gatsby-plugin-sharp": "^5.5.0",
     "gatsby-source-contentful": "^8.5.0",

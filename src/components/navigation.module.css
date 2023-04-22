@@ -22,6 +22,7 @@
 	display: flex;
 	list-style: none;
 	margin: 0;
+	padding-inline-start: 0;
 	gap: var(--space-xl);
 }
 
@@ -40,6 +41,25 @@
 .navigationItem a:hover {
 	border-bottom-color: var(--primary);
 	color: var(--primary);
+}
+
+.signUp a {
+	color: var(--primary);
+	background-color: var(--white);
+	border: 1.5px solid transparent;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+@media (max-width: 424px) {
+	.signUp a {
+		width: max-content;
+	}
+}
+
+.signUp a:hover {
+	color: var(--white);
+	background-color: var(--primary);
 }
 
 .logoLink {

@@ -20,5 +20,11 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST
       },
     },
+	// {
+	// 	resolve: 'gatsby-plugin-mailchimp',
+    //     options: {
+    //         endpoint: process.env.MAILCHIMP_ENDPOINT, 
+    //     },
+	// },
   ],
 };
