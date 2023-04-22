@@ -31,6 +31,9 @@ export default class SubForm extends React.Component {
 			</Layout>
 		) : (
 			<Layout>
+				<div className="textArea">
+					<h1>Subscribe to never miss a blog!</h1>
+				</div>
 				<form className="form" onSubmit={this._handleSubmit}>
 					<p>
 						<label>
