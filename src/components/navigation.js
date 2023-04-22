@@ -6,7 +6,7 @@ import * as styles from './navigation.module.css'
 const Navigation = () => (
 	<nav role="navigation" className={`${styles.navigator}`} aria-label="Main">
 		<Link to="/" className={styles.logoLink}>
-			<span className={styles.logo} />
+			<span className={[styles.logo, styles.hide2].join(' ')} />
 			<span className={styles.navigationItem}>House of Black Tides</span>
 		</Link>
 		<ul className={styles.navigation}>
@@ -20,7 +20,7 @@ const Navigation = () => (
 					Blog
 				</Link>
 			</li>
-			<li className={styles.navigationItem}>
+			<li className={[styles.navigationItem, styles.hide1].join(' ')}>
 				<Link to="/categories" className="active">
 					Categories
 				</Link>

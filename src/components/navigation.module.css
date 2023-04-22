@@ -51,6 +51,18 @@
 	padding: 10px;
 }
 
+@media (max-width: 374px) {
+	.hide1 {
+		display: none;
+	}
+}
+
+@media (max-width: 319px) {
+	.hide2 {
+		display: none;
+	}
+}
+
 @media (max-width: 424px) {
 	.signUp a {
 		width: max-content;
