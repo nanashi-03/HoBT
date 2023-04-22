@@ -5,7 +5,7 @@ import './global.css'
 import Seo from './seo'
 import Navigation from './navigation'
 import Footer from './footer'
-// import { Helmet } from 'react-helmet'
+
 class Template extends React.Component {
 	render() {
 		const { children } = this.props
