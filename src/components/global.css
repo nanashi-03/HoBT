@@ -11,6 +11,7 @@
 	src: url('/fonts/FiraSans-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -18,6 +19,7 @@
 	src: url('/fonts/CormorantGaramond-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -25,6 +27,7 @@
 	src: url('/fonts/LibreBaskerville-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -32,6 +35,7 @@
 	src: url('/fonts/CutiveMono-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -39,6 +43,7 @@
 	src: url('/fonts/RobotoMono-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 html {
