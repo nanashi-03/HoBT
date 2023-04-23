@@ -25,7 +25,7 @@ function Navigation() {
 				<span className={styles.logo} />
 				<span className={styles.navigationItem}>House of Black Tides</span>
 			</Link>
-			<div className={styles.navIcon} role='button' onClick={handleClick} tabIndex={0} onKeyDown={handleKeyDown} >
+			<div className={styles.navIcon} id='hamburger' aria-label='hamburger-button' role='button' onClick={handleClick} tabIndex={0} onKeyDown={handleKeyDown} >
 				<FontAwesomeIcon icon={click ? faTimes : faBars} />
 			</div>
 			<ul className={click ? [styles.navigation, styles.vision].join(' ') : styles.navigation}>

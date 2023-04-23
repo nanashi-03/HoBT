@@ -1,19 +1,43 @@
 @font-face {
-	font-family: 'Inter var';
-	font-weight: 100 900;
-	font-display: swap;
+	font-family: 'Lato';
+	src: url('/fonts/Lato-Regular.ttf') format('truetype');
+	font-weight: normal;
 	font-style: normal;
-	font-named-instance: 'Regular';
-	src: url('/fonts/Inter-roman.var.woff2?v=3.19') format('woff2');
 }
 
 @font-face {
-	font-family: 'Inter var';
-	font-weight: 100 900;
-	font-display: swap;
-	font-style: italic;
-	font-named-instance: 'Italic';
-	src: url('/fonts/Inter-italic.var.woff2?v=3.19') format('woff2');
+	font-family: 'FiraSans';
+	src: url('/fonts/FiraSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CormorantGaramond';
+	src: url('/fonts/CormorantGaramond-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LibreBaskerville';
+	src: url('/fonts/LibreBaskerville-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CutiveMono';
+	src: url('/fonts/CutiveMono-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'RobotoMono';
+	src: url('/fonts/RobotoMono-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 html {
@@ -121,7 +145,7 @@ code {
 }
 
 .form input,
-.form textarea{
+.form textarea {
 	font-family: inherit;
 	font-size: inherit;
 	border: 1px solid #aaa;
@@ -182,10 +206,10 @@ code {
 
 .socials * {
 	padding-left: 0.5rem;
-	padding-right: 0.5rem; 
+	padding-right: 0.5rem;
 }
 
-.hide ,
-.hide *{
+.hide,
+.hide * {
 	display: none;
 }

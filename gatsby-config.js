@@ -45,8 +45,9 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-offline`,
 			options: {
+				precachePages: [`/categories/`],
 				workboxConfig: {
-					globPatterns: ['**/icon-path*']
+					globPattern: [`**/*.{svg}`]
 				}
 			},
 		},

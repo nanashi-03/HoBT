@@ -1,6 +1,6 @@
 .meta {
   font-family: var(--font-serif);
-  font-size: var(--text-lg);
+  font-size: var(--text-md);
   font-style: italic;
   margin: 0 auto 1em;
   max-width: var(--size-max-width);
@@ -74,6 +74,10 @@
 
   .article {
     gap: var(--space-xl);
+  }
+  
+  .meta {
+	font-size: var(--text-lg);
   }
 }
 
